@@ -11,7 +11,7 @@
     "id": 2,
     "nombre": "Air Jordan 1 Mid SE",
     "precio": 60000,
-    "marca":"Nike",
+    "marca": "Nike",
     "imagen": "../img/Air Jordan 1 Mid.webp",
     "cantidad": 1
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "nombre": "Puma Palermo",
     "precio": 57000,
-    "marca":"Puma",
+    "marca": "Puma",
     "imagen": "../img/puma.webp",
     "cantidad": 1
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "nombre": "Topper Terre",
     "precio": 50000,
-    "marca":"Topper",
+    "marca": "Topper",
     "imagen": "../img/topper.webp",
     "cantidad": 1
   },

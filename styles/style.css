@@ -155,44 +155,44 @@ header .menu-md {
 
 
 /*Shop Contenido*/
-.shopContenido{
+.shopContenido {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 80px;
   margin-right: 80px;
-  
+
 }
 
-.card{
+.card {
   box-shadow: 0 4px 8px rgba(199, 199, 199, 0.2);
   max-width: 300px;
   height: 360px;
   margin: auto;
   text-align: center;
   margin-bottom: 50px;
-  padding-inline:20px ;
+  padding-inline: 20px;
   border: 0.2px solid white;
   background-color: black;
 }
 
-.card > img{
+.card>img {
   width: 90%;
   height: 250px;
 }
 
-.card >h3{
+.card>h3 {
   color: white;
   font-size: 25px;
 }
 
-.card > p{
+.card>p {
   color: white;
   font-size: 18px;
 }
 
-.card-btn img{
+.card-btn img {
   height: auto;
   text-align: center;
   height: auto;
@@ -200,9 +200,10 @@ header .menu-md {
   background-color: var(--clr--primary);
   padding: 8px;
   border-radius: 50%;
-  
+
 }
-.card-btn{
+
+.card-btn {
   display: block;
   cursor: pointer;
   margin-bottom: 5px;
@@ -230,6 +231,7 @@ header .menu-md {
 .carrito-contenedor::-webkit-scrollbar {
   display: none;
 }
+
 .verCarritoHeader {
   display: flex;
   justify-content: space-around;
@@ -239,7 +241,7 @@ header .menu-md {
 }
 
 
-.carrito-contenedor > .verCarritoCuerpo {
+.carrito-contenedor>.verCarritoCuerpo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -248,7 +250,7 @@ header .menu-md {
   margin: 10px;
 }
 
-.carrito-contenedor > div > img {
+.carrito-contenedor>div>img {
   height: 120px;
   width: 120px;
 }
@@ -259,12 +261,14 @@ header .menu-md {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  
+
 }
-.verCarritoBottom > h5{
+
+.verCarritoBottom>h5 {
   margin-bottom: 15px;
 }
-.vaciar{
+
+.vaciar {
   margin-top: 25px;
   background-color: var(--clr--primary);
   padding: 8px;
@@ -273,7 +277,7 @@ header .menu-md {
   cursor: pointer;
 }
 
-.buy-end{
+.buy-end {
   margin-top: 25px;
   background-color: blue;
   padding: 8px;
@@ -281,7 +285,8 @@ header .menu-md {
   color: #0a0909;
   cursor: pointer;
 }
-.eliminar-btn{
+
+.eliminar-btn {
   background-color: var(--clr--primary);
   padding: 8px;
   color: var(--clr--secondary);
@@ -289,10 +294,11 @@ header .menu-md {
   cursor: pointer;
 }
 
-.sumar, .restar{
+.sumar,
+.restar {
   cursor: pointer;
 }
 
-.filtrado{
+.filtrado {
   display: none;
 }
