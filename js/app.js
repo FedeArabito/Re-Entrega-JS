@@ -13,7 +13,7 @@ const getData = async ()=>{
   const response= await fetch("data.json");
   const data = await response.json();
   
-  
+
 
   data.forEach(({imagen, nombre, precio,id, cantidad, marca}) =>{
   let contenido = document.createElement("div");
@@ -70,39 +70,6 @@ const guardarLocale= ()=>{
   localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
-// const filtrarProductos = (marca)=>{
-//   const filtro = data.filter(producto => producto.marca === marca);
-//   getData(filtrarProductos);
-// }
-
-// const nike = document.getElementById("nike");
-// const adidas = document.getElementById("adidas");
-// const nb = document.getElementById("nb");
-// const puma = document.getElementById("puma");
-// const vans = document.getElementById("vans");
-// const toper = document.getElementById("topper");
-
-// nike.addEventListener("click", ()=>{
-//   filtrarProductos("Nike")
-// });
-
-// adidas.addEventListener("click", ()=>{
-//   filtrarProductos("Adidas")
-// });
-
-// vans.addEventListener("click", ()=>{   
-//   filtrarProductos("Vans") });
-
-// puma.addEventListener("click", ()=>{
-//   filtrarProductos("Puma") });
-
-// toper.addEventListener("click", ()=>{
-//   filtrarProductos("Topper")
-// });
-
-// nb.addEventListener("click", ()=>{
-//   filtrarProductos("New Balance")
-// });
 
 getData();
 
