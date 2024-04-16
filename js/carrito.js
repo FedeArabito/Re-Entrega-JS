@@ -4,6 +4,7 @@ const carritoCantidad = document.getElementById("carrito-counter");
 
 const pintarCarrito = ()=>{
 
+  console.log(carrito.length);
   verCarritoContenedor.innerHTML="";
   verCarritoContenedor.style.display="flex";
     const verCarritoHeader = document.createElement("div");
@@ -85,12 +86,10 @@ const pintarCarrito = ()=>{
 
     const finalizarCompra = document.querySelector(".buy-end");
     finalizarCompra.addEventListener("click", ()=>{
+      
       verCarritoContenedor.innerHTML="";
-      carrito = [];
-      carritoCounter();
-      guardarLocale();
-      pintarCarrito();
-      if (carrito.lenght !== 0) {
+      
+      if (carrito.length > 0) {
         Toastify({
           text: "Compra finalizada",
           className: "info",
@@ -99,6 +98,21 @@ const pintarCarrito = ()=>{
           },
           duration: 2000
         }).showToast();
+        carrito = [];
+        carritoCounter();
+        guardarLocale();
+      }else{
+        Toastify({
+          text: "Tu carrito esta vacio",
+          className: "info",
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+          duration: 2000
+        }).showToast();
+        carritoCounter();
+        guardarLocale();
+        
       }
     
     });
